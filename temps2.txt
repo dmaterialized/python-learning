@@ -1,0 +1,8 @@
+===========
+The Temperatures are:
+10
+-20
+100
+-233
+510
+all done.
