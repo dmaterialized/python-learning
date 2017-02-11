@@ -20,11 +20,9 @@ import time
 filenames=glob2.glob("*.txt")
 
 # create timestamps
-#
-
-
-#loop
+# loop
 # create new file with filename that is "now" as a string.
+
 with open(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S-%f")+".txt",'w') as file:
     #open that file and then
     for filename in filenames:
@@ -36,8 +34,9 @@ with open(datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S-%f")+".txt",'w') a
             # the file is known as f.
             # read F and write it.
             # everything in the section above is done in file "#TIMESTAMP"
-            # apparently it's
-            file.write((f.read)+" \n")
+            
+            # apparently the solution is: 
+            file.write((f.read)+" \n") 
     file.write("done.")
     print("finished!")
 # open file1,2,3
